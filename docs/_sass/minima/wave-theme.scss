@@ -1,0 +1,281 @@
+/**
+ * Wave-Inspired Professional Theme
+ * Features subtle wave patterns inspired by icy swell maps
+ */
+
+// Wave animation keyframes
+@keyframes gentle-wave {
+  0% {
+    transform: translateX(0) translateZ(0) scaleY(1);
+  }
+  50% {
+    transform: translateX(-25px) translateZ(0) scaleY(0.95);
+  }
+  100% {
+    transform: translateX(-50px) translateZ(0) scaleY(1);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+// Body and global styling
+body {
+  position: relative;
+  background: linear-gradient(135deg, $wave-ice 0%, $wave-frost 100%);
+  min-height: 100vh;
+  
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    background: 
+      radial-gradient(circle at 20% 80%, rgba(26, 84, 144, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(46, 134, 171, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 40% 40%, rgba(162, 59, 114, 0.05) 0%, transparent 50%);
+  }
+}
+
+// Site header with wave elements
+.site-header {
+  position: relative;
+  background: linear-gradient(90deg, $wave-primary 0%, $wave-secondary 100%);
+  border-bottom: none;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: 
+      linear-gradient(90deg, transparent 0%, rgba(26, 84, 144, 0.3) 25%, rgba(46, 134, 171, 0.5) 50%, rgba(26, 84, 144, 0.3) 75%, transparent 100%);
+    clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+    animation: gentle-wave 6s ease-in-out infinite;
+  }
+  
+  .site-title {
+    color: white !important;
+    font-weight: 600;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    
+    &:hover {
+      color: $wave-ice !important;
+      text-decoration: none;
+    }
+  }
+  
+  .site-nav {
+    .page-link {
+      color: rgba(255, 255, 255, 0.9);
+      
+      &:hover {
+        color: $wave-ice;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+// Main content area
+.page-content {
+  padding-top: 40px;
+  position: relative;
+  
+  .wrapper {
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    box-shadow: 
+      0 8px 32px rgba(26, 84, 144, 0.1),
+      0 2px 8px rgba(46, 134, 171, 0.15);
+    padding: 40px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+    
+    &::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 200%;
+      height: 200%;
+      background: 
+        repeating-linear-gradient(
+          45deg,
+          transparent,
+          transparent 35px,
+          rgba(46, 134, 171, 0.02) 35px,
+          rgba(46, 134, 171, 0.02) 70px
+        );
+      z-index: -1;
+      animation: shimmer 8s ease-in-out infinite;
+    }
+  }
+}
+
+// Typography enhancements
+h1, h2, h3, h4, h5, h6 {
+  color: $wave-primary;
+  position: relative;
+  
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    background: linear-gradient(90deg, $wave-secondary, $wave-accent);
+    border-radius: 1px;
+  }
+}
+
+// Links with wave-inspired styling
+a {
+  color: $wave-secondary;
+  text-decoration: none;
+  position: relative;
+  transition: all 0.3s ease;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, $wave-secondary, $wave-accent);
+    transition: width 0.3s ease;
+  }
+  
+  &:hover {
+    color: $wave-accent;
+    
+    &::before {
+      width: 100%;
+    }
+  }
+  
+  &:visited {
+    color: $wave-accent;
+  }
+}
+
+// List styling with wave motifs
+ul, ol {
+  li {
+    position: relative;
+    margin-bottom: 8px;
+    padding-left: 4px;
+    
+    &::before {
+      content: '◦';
+      color: $wave-secondary;
+      font-weight: bold;
+      position: absolute;
+      left: -16px;
+      animation: shimmer 4s ease-in-out infinite;
+    }
+  }
+}
+
+// Footer with wave pattern
+.site-footer {
+  background: linear-gradient(135deg, $wave-deep 0%, $wave-primary 100%);
+  color: white;
+  position: relative;
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -15px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+    background: 
+      radial-gradient(ellipse 100px 30px at 50% 0%, $wave-secondary 0%, transparent 70%),
+      radial-gradient(ellipse 80px 25px at 25% 0%, $wave-accent 0%, transparent 70%),
+      radial-gradient(ellipse 120px 35px at 75% 0%, $wave-primary 0%, transparent 70%);
+    clip-path: polygon(0 100%, 0 0, 10% 50%, 20% 0, 30% 50%, 40% 0, 50% 50%, 60% 0, 70% 50%, 80% 0, 90% 50%, 100% 0, 100% 100%);
+  }
+  
+  .footer-heading {
+    color: $wave-ice;
+  }
+  
+  a {
+    color: rgba(255, 255, 255, 0.8);
+    
+    &:hover {
+      color: $wave-ice;
+    }
+    
+    &::before {
+      background: linear-gradient(90deg, $wave-ice, $wave-frost);
+    }
+  }
+  
+  .social-media-list {
+    a {
+      .svg-icon {
+        fill: rgba(255, 255, 255, 0.8);
+        transition: fill 0.3s ease;
+      }
+      
+      &:hover .svg-icon {
+        fill: $wave-ice;
+      }
+    }
+  }
+}
+
+// Responsive wave elements
+@media screen and (max-width: 600px) {
+  .site-header::after {
+    animation-duration: 4s;
+  }
+  
+  .page-content .wrapper {
+    padding: 20px;
+    border-radius: 8px;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    &::after {
+      width: 20px;
+    }
+  }
+}
+
+// Subtle ice crystal pattern for larger screens
+@media screen and (min-width: 1200px) {
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: 
+      radial-gradient(circle at 2px 2px, rgba(46, 134, 171, 0.1) 1px, transparent 0);
+    background-size: 40px 40px;
+    animation: shimmer 12s ease-in-out infinite;
+  }
+}
