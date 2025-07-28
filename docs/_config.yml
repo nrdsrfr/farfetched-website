@@ -35,7 +35,7 @@ source: docs
 destination: docs/_site
 
 # Build settings
-theme: slate
+theme: minima
 plugins:
   - jekyll-feed
 
