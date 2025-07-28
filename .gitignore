@@ -5,3 +5,4 @@ docs
 .jekyll-metadata
 vendor
 Gemfile.lock
+.vscode
