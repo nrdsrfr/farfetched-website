@@ -1,0 +1,12 @@
+# Ignore local development files
+_config_local.yml
+.sass-cache/
+_site/
+
+# Jekyll build artifacts
+.jekyll-cache/
+.jekyll-metadata
+
+# Development tools
+*.DS_Store
+.vscode/
