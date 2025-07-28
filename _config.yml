@@ -19,7 +19,7 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Far-Fetched Advisory and Consulting
-email: your-email@example.com
+email: info@farfetched.ltd
 description: >- # this means to ignore newlines until "baseurl:"
   Strategic technology leader with over 20 years’ experience in software engineering, platform architecture, and organizational design. Far-Fetched Advisory and Consulting partners with digital businesses, especially in iGaming and other regulated or high-growth sectors—to scale platforms, optimize delivery, and raise engineering standards. We specialize in high-performance systems, team structuring, and product–tech alignment for ambitious companies seeking sustainable growth.
 
