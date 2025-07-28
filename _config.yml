@@ -31,7 +31,8 @@ linkedin_username: jessecary
 github_username: nrdsrfr
 
 # Output built site to /docs for GitHub Pages
-destination: docs
+source: docs
+destination: docs/_site
 
 # Build settings
 theme: minima
