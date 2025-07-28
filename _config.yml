@@ -24,9 +24,10 @@ email: info@farfetched.ltd
 description: >-
   Strategic technology leader with over 20 years’ experience in software engineering, platform architecture, and organizational design. Far-Fetched Advisory and Consulting partners with digital businesses, especially in iGaming and other regulated or high-growth sectors—to scale platforms, optimize delivery, and raise engineering standards. We specialize in high-performance systems, team structuring, and product–tech alignment for ambitious companies seeking sustainable growth.
 
-baseurl: "" # no baseurl for custom domain
+baseurl: "" # Leave empty when using a custom domain on GitHub Pages
 url: "https://www.farfetched.ltd"
-twitter_username: jekyllrb
+twitter_username: nrdsrfr
+linkedin_username: jessecary
 github_username: nrdsrfr
 
 # Output built site to /docs for GitHub Pages
@@ -45,15 +46,15 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
-  - Gemfile
-  - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-  - README.md
