@@ -1,0 +1,82 @@
+# ------------------------------------------------------------------------
+# JEKYLL CONFIGURATION OPTIONS (see https://jekyllrb.com/docs/configuration/options/)
+# Uncomment and set as needed. Descriptions provided for reference.
+# ------------------------------------------------------------------------
+# source: DIR                # Directory where Jekyll reads files (default: .)
+# destination: DIR           # Directory where Jekyll writes files (default: ./_site)
+# safe: BOOL                 # Disable non-whitelisted plugins, caching, symlinks
+# disable_disk_cache: BOOL   # Disable disk caching (Jekyll 4.1+)
+# ignore_theme_config: BOOL  # Ignore theme's bundled _config.yml (Jekyll 4.1+)
+# exclude: [DIR, FILE, ...]  # Exclude directories/files from conversion
+# include: [DIR, FILE, ...]  # Force inclusion of directories/files (e.g., .htaccess)
+# keep_files: [DIR, FILE, ...] # Keep selected files in destination when cleaning
+# timezone: TIMEZONE         # Set the time zone for site generation
+# encoding: ENCODING         # Set file encoding (default: utf-8)
+# plugins_dir: [DIR1,...]    # Plugin directories (default: _plugins/)
+# layouts_dir: DIR           # Layout directory (default: _layouts/)
+# show_drafts: BOOL          # Process and render draft posts
+# future: BOOL               # Publish posts with a future date
+# unpublished: BOOL          # Render posts marked as unpublished
+# lsi: BOOL                  # Produce an index for related posts
+# limit_posts: NUM           # Limit the number of posts to parse/publish
+# force_polling: BOOL        # Force watch to use polling
+# verbose: BOOL              # Print verbose output
+# quiet: BOOL                # Silence normal output
+# incremental: BOOL          # Enable incremental build
+# profile: BOOL              # Generate a Liquid rendering profile
+# strict_front_matter: BOOL  # Fail build on YAML syntax error in front matter
+# url: SCHEME://HOST[:PORT]  # Canonical URL of your site (no trailing slash)
+# baseurl: /PATH/TO/SITE     # Serve the website from the given base URL
+# port: PORT                 # Local server port (default: 4000)
+# host: HOSTNAME             # Local server hostname (default: localhost)
+ livereload: true           # Enable live reload
+# livereload_ignore: [GLOB1,...] # File glob patterns for LiveReload to ignore
+# livereload_min_delay: SECONDS  # Min delay before reloading page
+# livereload_max_delay: SECONDS  # Max delay before reloading page
+# livereload_port: PORT      # Port for LiveReload
+# open_url: BOOL             # Open the site's URL in the browser
+# detach: BOOL               # Detach the server from the terminal
+# skip_initial_build: BOOL   # Skip the initial site build before server starts
+# show_dir_listing: BOOL     # Show directory listing instead of loading index
+# theme: THEME_NAME          # Name of the theme to use
+# plugins: [PLUGIN1,...]     # List of plugins to use
+# defaults:                  # Set defaults for front matter variables
+# log_level: debug|info|warn|error # Specify log level
+# JEKYLL_ENV: production|development # Set the environment value
+# JEKYLL_LOG_LEVEL: info     # Set log level via environment variable
+# JEKYLL_NO_BUNDLER_REQUIRE: true # Disable requiring gems in :jekyll_plugins
+# ------------------------------------------------------------------------
+
+
+baseurl: "" # Leave empty when using a custom domain on GitHub Pages
+url: "https://localhost"
+
+# Output built site to /docs for GitHub Pages
+source: docs
+destination: docs/_site
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
