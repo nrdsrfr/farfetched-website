@@ -1,0 +1,26 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Custom wave-inspired theme variables
+$wave-primary: #1a5490 !default;      // Deep ocean blue
+$wave-secondary: #2e86ab !default;    // Swell blue  
+$wave-accent: #a23b72 !default;       // Deep ice purple
+$wave-light: #f18f01 !default;        // Warm accent
+$wave-ice: #f0f8ff !default;          // Alice blue (ice)
+$wave-frost: #e8f4f8 !default;        // Frost blue
+$wave-deep: #0a2f5c !default;         // Deep water
+
+// Override Minima variables with our wave theme
+$brand-color: $wave-primary !default;
+$text-color: #2c3e50 !default;
+$background-color: $wave-ice !default;
+$link-base-color: $wave-secondary !default;
+$link-visited-color: $wave-accent !default;
+$link-hover-color: $wave-light !default;
+
+// Import the original Minima theme
+@import "minima";
+
+// Import our custom wave overrides
+@import "minima/wave-theme";

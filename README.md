@@ -1,8 +1,8 @@
 # farfetched-website
 Website for My consultancy services
 
-Serve locally without the baseurl from _config.yml
- `bundle exec jekyll serve --baseurl=""`
+
+`bundle exec jekyll serve --source docs`
 
 
 
