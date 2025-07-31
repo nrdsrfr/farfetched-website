@@ -4,19 +4,28 @@
 
 layout: home
 ---
-## Hello
 
-Welcome to Far-Fetched Advisory and Consulting Ltd!
-
-### About Jesse Cary
-
-Jesse Cary is a seasoned professional with expertise in advisory and consulting services. With a strong background in strategic planning, business development, and leadership, Jesse has helped organizations achieve their goals and navigate complex challenges. Connect with Jesse on [LinkedIn](https://www.linkedin.com/in/jessecary) to learn more about his experience and insights.
+<section class="hero-section">
+  <div class="hero-content">
+    <h1 class="hero-title">Scaling <strong>platforms</strong> and <strong>teams</strong> for ambitious digital companies</h1>
+    <p class="hero-subtitle">Strategic engineering leadership that drives growth, performance, and results.</p>
+    <div class="hero-cta">
+      <a href="/about/" class="btn-primary">Learn More</a>
+      <a href="mailto:info@farfetched.ltd" class="btn-secondary">Get In Touch</a>
+    </div>
+  </div>
+</section>
 
 ### Services Offered
 
-- Strategic Advisory
-- Business Consulting
-- Leadership Development
-- Organizational Growth Strategies
+- **Strategic Advisory**
+  - Technical Roadmaps
+  - Platform Architecture
+- **Business Consulting**
+- **Leadership Development**
+- **Organizational Growth Strategies**
+  - Global Engineering Team Building
 
-Feel free to reach out for tailored solutions to meet your business needs!
+---
+
+**Ready to scale your platform and team?** Learn more <a href="/about/">about Jesse Cary</a> and his experience, or <a href="mailto:info@farfetched.ltd">get in touch</a> for tailored solutions.

@@ -1,6 +1,7 @@
 /**
  * Wave-Inspired Professional Theme
  * Features subtle wave patterns inspired by icy swell maps
+ * Accessibility: Respects reduced motion preferences
  */
 
 // Wave animation keyframes
@@ -28,11 +29,22 @@
   }
 }
 
-// Body and global styling
+// Respect user's reduced motion preferences
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+// Body and global styling - Enhanced for approachability
 body {
   position: relative;
   background: linear-gradient(135deg, $wave-ice 0%, $wave-frost 100%);
   min-height: 100vh;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 500; // Medium weight for better readability and approachability
   
   &::before {
     content: '';
@@ -70,8 +82,9 @@ body {
   
   .site-title {
     color: white !important;
-    font-weight: 600;
+    font-weight: 700; // Bold for brand recognition and approachability
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
     
     &:hover {
       color: $wave-ice !important;
@@ -82,6 +95,8 @@ body {
   .site-nav {
     .page-link {
       color: rgba(255, 255, 255, 0.9);
+      font-weight: 600; // Semi-bold for navigation clarity
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       
       &:hover {
         color: $wave-ice;
@@ -91,23 +106,24 @@ body {
   }
 }
 
-// Main content area
+// Main content area - Enhanced content cards with diagonal patterns
 .page-content {
   padding-top: 40px;
   position: relative;
   
   .wrapper {
-    background: rgba(255, 255, 255, 0.8);
-    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.85); // Slightly more opaque for better content contrast
+    border-radius: 16px; // Increased border radius for modern look
     box-shadow: 
-      0 8px 32px rgba(26, 84, 144, 0.1),
-      0 2px 8px rgba(46, 134, 171, 0.15);
+      0 12px 40px rgba(26, 84, 144, 0.12),
+      0 4px 12px rgba(46, 134, 171, 0.18);
     padding: 40px;
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px); // Enhanced blur for glassmorphism effect
+    border: 1px solid rgba(255, 255, 255, 0.25);
     position: relative;
     overflow: hidden;
     
+    // Enhanced diagonal pattern overlay for texture
     &::before {
       content: '';
       position: absolute;
@@ -119,20 +135,29 @@ body {
         repeating-linear-gradient(
           45deg,
           transparent,
-          transparent 35px,
-          rgba(46, 134, 171, 0.02) 35px,
-          rgba(46, 134, 171, 0.02) 70px
+          transparent 30px,
+          rgba(46, 134, 171, 0.03) 30px,
+          rgba(46, 134, 171, 0.03) 60px
+        ),
+        repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 45px,
+          rgba(26, 84, 144, 0.02) 45px,
+          rgba(26, 84, 144, 0.02) 90px
         );
       z-index: -1;
-      animation: shimmer 8s ease-in-out infinite;
+      animation: shimmer 12s ease-in-out infinite;
     }
   }
 }
 
-// Typography enhancements
+// Typography enhancements - Very bold sans-serif for approachability
 h1, h2, h3, h4, h5, h6 {
   color: $wave-primary;
   position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 700; // Very bold for approachability
   
   &::after {
     content: '';
@@ -144,6 +169,19 @@ h1, h2, h3, h4, h5, h6 {
     background: linear-gradient(90deg, $wave-secondary, $wave-accent);
     border-radius: 1px;
   }
+}
+
+// Specific heading weights for hierarchy while maintaining boldness
+h1 {
+  font-weight: 800; // Extra bold for main headings
+}
+
+h2 {
+  font-weight: 700; // Bold for section headings
+}
+
+h3, h4, h5, h6 {
+  font-weight: 600; // Semi-bold for subsections, still approachable
 }
 
 // Links with wave-inspired styling
@@ -245,7 +283,7 @@ ul, ol {
   }
 }
 
-// Responsive wave elements
+// Enhanced responsive wave elements and mobile optimization
 @media screen and (max-width: 600px) {
   .site-header::after {
     animation-duration: 4s;
@@ -254,12 +292,33 @@ ul, ol {
   .page-content .wrapper {
     padding: 20px;
     border-radius: 8px;
+    backdrop-filter: blur(8px); // Reduced blur for mobile performance
   }
   
-  h1, h2, h3, h4, h5, h6 {
+  // Mobile typography adjustments while maintaining boldness
+  h1 {
+    font-size: 1.8rem;
+    font-weight: 700; // Maintain bold but slightly reduce for mobile readability
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  h3, h4, h5, h6 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    
     &::after {
       width: 20px;
     }
+  }
+  
+  // Mobile body text - maintain approachability
+  body {
+    font-weight: 400; // Slightly lighter for mobile readability
+    line-height: 1.6; // Better mobile line height
   }
 }
 
@@ -277,5 +336,141 @@ ul, ol {
       radial-gradient(circle at 2px 2px, rgba(46, 134, 171, 0.1) 1px, transparent 0);
     background-size: 40px 40px;
     animation: shimmer 12s ease-in-out infinite;
+  }
+}
+
+// Hero Section Styling
+.hero-section {
+  background: linear-gradient(135deg, rgba(240, 248, 255, 0.9) 0%, rgba(232, 244, 248, 0.9) 100%);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  margin: 2rem 0 3rem 0;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 
+    0 12px 40px rgba(26, 84, 144, 0.15),
+    0 4px 12px rgba(46, 134, 171, 0.2);
+  
+  &::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: 
+      repeating-linear-gradient(
+        45deg,
+        transparent,
+        transparent 50px,
+        rgba(46, 134, 171, 0.03) 50px,
+        rgba(46, 134, 171, 0.03) 100px
+      );
+    z-index: -1;
+    animation: gentle-wave 10s ease-in-out infinite;
+  }
+  
+  .hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
+    color: $wave-primary;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    
+    strong {
+      font-weight: 600;
+      color: $wave-secondary;
+      position: relative;
+      
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(90deg, $wave-secondary, $wave-accent);
+        border-radius: 1px;
+      }
+    }
+    
+    @media screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+    
+    @media screen and (max-width: 480px) {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+    color: #2c3e50;
+    opacity: 0.9;
+    
+    @media screen and (max-width: 768px) {
+      font-size: 1.1rem;
+    }
+  }
+  
+  .hero-cta {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+    .btn-primary,
+    .btn-secondary {
+      display: inline-block;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: all 0.3s ease;
+      border: 2px solid transparent;
+      
+      @media screen and (max-width: 480px) {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.9rem;
+      }
+    }
+    
+    .btn-primary {
+      background: linear-gradient(135deg, $wave-primary, $wave-secondary);
+      color: white;
+      box-shadow: 0 4px 15px rgba(26, 84, 144, 0.3);
+      
+      &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 20px rgba(26, 84, 144, 0.4);
+        color: white;
+      }
+    }
+    
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.8);
+      color: $wave-primary;
+      border-color: $wave-primary;
+      
+      &:hover {
+        background: $wave-primary;
+        color: white;
+        transform: translateY(-2px);
+      }
+    }
   }
 }
