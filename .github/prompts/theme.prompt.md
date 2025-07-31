@@ -22,24 +22,21 @@ The theme uses a carefully selected color palette inspired by ice and water:
 
 ## Key Features
 
-### 1. Animated Wave Elements
-- Gentle wave animations in the header and footer
-- Subtle shimmer effects throughout the design
-- CSS-only animations for performance
+### 1. Wave Elements
+- Subtle isobar patterns in backgrounds
+- CSS-only
 
 ### 2. Professional Typography
 - All headings use the wave primary color
 - Accent lines under headings for visual hierarchy
 - Custom link styling with animated underlines
+- Very bold sans-serif typeface for approachability
 
 ### 3. Content Cards
 - Semi-transparent white content areas with backdrop blur
 - Subtle shadows and rounded corners
-- Diagonal pattern overlays for texture
 
 ### 4. Custom List Styling
-- Wave-inspired bullet points (◦)
-- Animated shimmer effects on list markers
 - Consistent spacing and alignment
 
 ### 5. Responsive Design
