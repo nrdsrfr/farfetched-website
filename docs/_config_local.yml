@@ -29,7 +29,7 @@
 # baseurl: /PATH/TO/SITE     # Serve the website from the given base URL
 # port: PORT                 # Local server port (default: 4000)
 # host: HOSTNAME             # Local server hostname (default: localhost)
- livereload: true           # Enable live reload
+livereload: true           # Enable live reload
 # livereload_ignore: [GLOB1,...] # File glob patterns for LiveReload to ignore
 # livereload_min_delay: SECONDS  # Min delay before reloading page
 # livereload_max_delay: SECONDS  # Max delay before reloading page

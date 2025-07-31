@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Start Jekyll Server",
+      "label": "Start Jekyll Server - Local Config",
       "type": "shell",
       "command": "bundle exec jekyll serve --source docs --config docs/_config.yml,docs/_config_local.yml",
       "group": "build",
@@ -10,9 +10,9 @@
       "detail": "Run Jekyll with Bundler"
     },
     {
-      "label": "Build Jekyll Site",
+      "label": "Build Jekyll Site - Prod Config",
       "type": "shell",
-      "command": "bundle exec jekyll build --source docs --config docs/_config.yml,docs/_config_local.yml",
+      "command": "bundle exec jekyll build --source docs --config docs/_config.yml",
       "group": "build",
       "problemMatcher": [],
       "detail": "Build Jekyll site with Bundler"
