@@ -1,8 +1,11 @@
+---
+mode: agent
+---
 # Wave-Inspired Professional Theme Documentation
 
 ## Overview
 
-This custom Jekyll theme creates a professional, wave-inspired design for the Far-Fetched Advisory and Consulting website. The theme features subtle wave patterns reminiscent of icy bars on swell maps, using a sophisticated blue and ice color palette that maintains professionalism while adding visual interest.
+This custom Jekyll theme creates a professional, wave-inspired design for the Far-Fetched Advisory and Consulting website. The theme features subtle isobar patterns integrated directly into the main background, using a sophisticated blue and ice color palette that maintains professionalism while adding visual interest. The design emphasizes clean, uncluttered layouts without wrapper cards or extra layers.
 
 ## Design Philosophy
 
@@ -23,24 +26,25 @@ The theme uses a carefully selected color palette inspired by ice and water:
 ## Key Features
 
 ### 1. Wave Elements
-- Subtle isobar patterns in backgrounds
-- CSS-only
+- Subtle isobar patterns integrated into main background
+- Responsive pattern scaling across all screen sizes
+- CSS-only implementation
 
 ### 2. Professional Typography
 - All headings use the wave primary color
 - Accent lines under headings for visual hierarchy
-- Custom link styling with animated underlines
 - Very bold sans-serif typeface for approachability
 
-### 3. Content Cards
-- Semi-transparent white content areas with backdrop blur
-- Subtle shadows and rounded corners
+### 3. Background Design
+- Clean, uncluttered layout without wrapper cards
+- Subtle isobar patterns integrated into main background
+- Responsive pattern scaling for different screen sizes
 
 ### 4. Custom List Styling
 - Consistent spacing and alignment
 
 ### 5. Responsive Design
-- Mobile-optimized layouts
+- Mobile-optimized layouts with adaptive isobar patterns
 - Scalable wave elements
 - Adaptive animations for different screen sizes
 
