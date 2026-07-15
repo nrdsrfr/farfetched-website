@@ -1,0 +1,12 @@
+/* Far Fetched — Fonts
+   No brand font files were supplied. Nearest Google Fonts matches used as
+   placeholders: Space Grotesk (geometric sans, display/UI) and JetBrains Mono
+   (techy monospace accent). Flagged in readme.md — swap for real brand fonts
+   when available. Loaded via Google Fonts CSS2 endpoint (not self-hosted). */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --font-sans: 'Space Grotesk', 'Helvetica Neue', Arial, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+}

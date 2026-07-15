@@ -1,0 +1,22 @@
+/* Far Fetched — Elevation, glow, motion */
+:root {
+  /* Elevation shadows: soft, cool-toned, low-contrast (dark UI) */
+  --shadow-sm: 0 1px 2px rgba(0, 5, 15, 0.4);
+  --shadow-md: 0 4px 16px rgba(0, 8, 24, 0.45), 0 1px 0 rgba(255,255,255,0.02) inset;
+  --shadow-lg: 0 12px 32px rgba(0, 8, 24, 0.55);
+  --shadow-xl: 0 24px 64px rgba(0, 6, 20, 0.6);
+
+  /* Accent glow — used sparingly on primary CTAs / focus / active nav */
+  --glow-accent: 0 0 0 1px rgba(59,130,246,0.4), 0 0 24px rgba(37,99,235,0.35);
+  --glow-foam: 0 0 24px rgba(56,189,248,0.3);
+
+  /* Motion */
+  --ease-standard: cubic-bezier(0.4, 0, 0.2, 1); /* @kind other */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1); /* @kind other */
+  --duration-fast: 120ms; /* @kind other */
+  --duration-base: 200ms; /* @kind other */
+  --duration-slow: 360ms; /* @kind other */
+
+  /* Backdrop blur (glass panels — nav bars, modals, command palettes only) */
+  --blur-panel: 20px;
+}
