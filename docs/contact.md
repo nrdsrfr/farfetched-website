@@ -3,6 +3,7 @@ layout: default
 title: Contact
 subtitle: Get in touch with us
 excerpt: Reach out to Far-Fetched Ltd for consultancy, collaboration, or inquiries.
+permalink: /contact/
 ---
 
 <!-- Calendly inline widget begin -->

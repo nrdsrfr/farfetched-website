@@ -154,7 +154,7 @@ layout: home
     <h2>Ready to Scale Your Platform and Team?</h2>
     <p class="cta-subtitle">Let's discuss how strategic engineering leadership can drive your growth.</p>
     <div class="cta-options">
-      <a href="./contact" class="btn-primary">Schedule 30-Minute Intro Call</a>
+      <a href="/contact/" class="btn-primary">Schedule 30-Minute Intro Call</a>
       <a href="mailto:info@farfetched.ltd" class="btn-secondary">Send Email</a>
       <a href="https://www.linkedin.com/in/jessecary" class="btn-tertiary" target="_blank">Connect on LinkedIn</a>
     </div>
