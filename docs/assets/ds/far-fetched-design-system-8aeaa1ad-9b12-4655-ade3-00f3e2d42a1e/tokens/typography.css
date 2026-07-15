@@ -1,0 +1,21 @@
+/* Far Fetched — Typography scale */
+:root {
+  --text-display-xl: 700 4.5rem/1.02 var(--font-sans);
+  --text-display-l:  600 3.25rem/1.05 var(--font-sans);
+  --text-display-m:  600 2.5rem/1.08 var(--font-sans);
+  --text-heading-l:  600 1.875rem/1.2 var(--font-sans);
+  --text-heading-m:  600 1.5rem/1.28 var(--font-sans);
+  --text-heading-s:  600 1.25rem/1.35 var(--font-sans);
+  --text-body-l:     400 1.125rem/1.6 var(--font-sans);
+  --text-body-m:     400 1rem/1.6 var(--font-sans);
+  --text-body-s:     400 0.875rem/1.55 var(--font-sans);
+  --text-label:      500 0.8125rem/1.3 var(--font-sans);
+  --text-caption:    500 0.75rem/1.35 var(--font-sans);
+  --text-mono-m:     400 0.9375rem/1.6 var(--font-mono);
+  --text-mono-s:     400 0.8125rem/1.5 var(--font-mono);
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0em;
+  --tracking-wide: 0.04em;
+  --tracking-label: 0.06em;
+}

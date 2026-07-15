@@ -22,5 +22,11 @@ $link-hover-color: $wave-light !default;
 // Import the original Minima theme
 @import "minima";
 
-// Import our custom wave overrides
-@import "minima/wave-theme";
+// Active theme: Far Fetched dark redesign (design-system tokens driven)
+@import "farfetched/ff-dark-theme";
+
+// Fallback: original light wave-inspired theme. Swap the two imports above
+// to redeploy it (note: it targets the old homepage markup/classes, e.g.
+// .trust-signals, .expertise-positioning, .services-overview, .about-jesse —
+// the page templates would need to be reverted alongside it).
+// @import "minima/wave-theme";
