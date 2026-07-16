@@ -10,6 +10,14 @@
       "detail": "Run Jekyll with Bundler"
     },
     {
+      "label": "Start Jekyll Server - PROD Config",
+      "type": "shell",
+      "command": "bundle exec jekyll serve --source docs --config docs/_config.yml",
+      "group": "build",
+      "problemMatcher": [],
+      "detail": "Run Jekyll with Bundler"
+    },
+    {
       "label": "Build Jekyll Site - Prod Config",
       "type": "shell",
       "command": "bundle exec jekyll build --source docs --config docs/_config.yml",

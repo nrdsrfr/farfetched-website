@@ -1,0 +1,23 @@
+<svg width="120" height="60" viewBox="0 0 120 60" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="high5Brand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#8E24AA;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#D81B60;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="120" height="60" fill="#FFFFFF" rx="6"/>
+  
+  <!-- Gaming Elements -->
+  <circle cx="18" cy="22" r="6" fill="url(#high5Brand)" opacity="0.8"/>
+  <rect x="12" y="32" width="12" height="8" fill="url(#high5Brand)" opacity="0.6" rx="2"/>
+  
+  <!-- Brand Text -->
+  <text x="35" y="22" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="#8E24AA">HIGH 5</text>
+  <text x="35" y="35" font-family="Arial, sans-serif" font-size="8" fill="#666666">GAMES</text>
+  <text x="35" y="46" font-family="Arial, sans-serif" font-size="6" fill="#999999">CASINO CONTENT</text>
+  
+  <!-- "5" highlight -->
+  <text x="75" y="22" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="url(#high5Brand)">5</text>
+</svg>

@@ -1,0 +1,220 @@
+/* Company Logos Display Styling */
+
+/* Enhanced Trust Signals Section with Logos */
+.trust-signals .client-logos-carousel {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.trust-signals .client-logos-carousel h3 {
+  font-size: 1.25rem;
+  color: $wave-secondary;
+  margin-bottom: 2rem;
+  font-weight: 600;
+}
+
+.trust-signals .logos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  max-width: 800px;
+  margin: 0 auto;
+  
+  @media screen and (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  @media screen and (max-width: 480px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
+.trust-signals .client-logo {
+  max-width: 100px;
+  max-height: 60px;
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+  transition: all 0.3s ease;
+  filter: grayscale(100%);
+  
+  &:hover {
+    opacity: 1;
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+  
+  @media screen and (max-width: 480px) {
+    max-width: 80px;
+    max-height: 48px;
+  }
+}
+
+/* Technology Stack Section */
+.technology-stack {
+  padding: 6rem 2rem;
+  background: white;
+  
+  .tech-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: $wave-primary;
+  }
+  
+  .tech-logos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 3rem;
+    
+    @media screen and (max-width: 768px) {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 2rem;
+    }
+    
+    @media screen and (max-width: 480px) {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+  }
+  
+  .tech-category {
+    text-align: center;
+    
+    h4 {
+      color: $wave-secondary;
+      margin-bottom: 1rem;
+      font-size: 1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    
+    img {
+      max-width: 60px;
+      max-height: 40px;
+      margin: 0.5rem;
+      opacity: 0.7;
+      transition: all 0.3s ease;
+      filter: grayscale(100%);
+      
+      &:hover {
+        opacity: 1;
+        filter: grayscale(0%);
+        transform: scale(1.1);
+      }
+      
+      @media screen and (max-width: 480px) {
+        max-width: 50px;
+        max-height: 32px;
+      }
+    }
+  }
+}
+
+/* Alternative: Inline Logos in Existing Content */
+.expertise-positioning .tech-logos-inline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  
+  img {
+    max-width: 50px;
+    max-height: 30px;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+    
+    &:hover {
+      opacity: 1;
+      filter: grayscale(0%);
+    }
+  }
+}
+
+/* Services Section Enhancement */
+.services-overview .service-card {
+  .tech-logo {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    max-width: 24px;
+    max-height: 24px;
+    opacity: 0.4;
+  }
+}
+
+/* Loading Animation for Logos */
+@keyframes logoFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 0.8;
+    transform: translateY(0);
+  }
+}
+
+.client-logo,
+.tech-category img {
+  animation: logoFadeIn 0.6s ease-out;
+}
+
+/* Dark Theme Adaptations */
+@media (prefers-color-scheme: dark) {
+  .client-logo,
+  .tech-category img {
+    filter: grayscale(100%) brightness(0.8);
+    
+    &:hover {
+      filter: grayscale(0%) brightness(1);
+    }
+  }
+}
+
+/* High-DPI Display Optimizations */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .client-logo,
+  .tech-category img {
+    image-rendering: -webkit-optimize-contrast;
+    image-rendering: crisp-edges;
+  }
+}
+
+/* Logo Grid Variants */
+.logos-grid-compact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  
+  .client-logo {
+    max-width: 80px;
+    max-height: 48px;
+  }
+}
+
+.logos-grid-showcase {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  
+  .client-logo {
+    max-width: 120px;
+    max-height: 72px;
+  }
+}
