@@ -3,6 +3,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
+  <!-- Far Fetched design tokens -->
+  {%- assign ds_dir = "/assets/ds/far-fetched-design-system-8aeaa1ad-9b12-4655-ade3-00f3e2d42a1e" -%}
+  <link rel="stylesheet" href="{{ ds_dir | append: '/tokens/fonts.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ ds_dir | append: '/tokens/colors.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ ds_dir | append: '/tokens/typography.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ ds_dir | append: '/tokens/spacing.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ ds_dir | append: '/tokens/effects.css' | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
@@ -11,6 +18,6 @@
   <!-- Calendly badge widget begin -->
   <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
   <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-  <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/jessecary/30min', text: 'Schedule a Consultation', color: '#000000ff', textColor: '#ffffff', branding: true }); }</script>
+  <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/jessecary/30min', text: 'Schedule a Consultation', color: '#2563eb', textColor: '#ffffff', branding: true }); }</script>
   <!-- Calendly badge widget end -->
 </head>

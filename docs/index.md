@@ -5,158 +5,195 @@
 layout: home
 ---
 
-<!-- Section 1: Hero Section (Already Implemented) -->
+<div class="ff-view">
+
+<!-- Hero -->
 <section class="hero-section">
   <div class="hero-content">
-    <h1 class="hero-title">Scaling <strong>platforms</strong> and <strong>teams</strong> for ambitious digital companies</h1>
-    <p class="hero-subtitle">Strategic engineering leadership that drives growth, performance, and results.</p>
+    <div class="ff-eyebrow">Strategic engineering &amp; AI leadership</div>
+    <h1 class="hero-title">Scaling <strong>platforms</strong>, <strong>teams</strong>, and <strong>AI</strong> for ambitious digital companies</h1>
+    <p class="hero-subtitle">Strategic engineering and AI leadership that drives growth, performance, and results.</p>
     <div class="hero-cta">
-      <a href="/about/" class="btn-primary">Learn More</a>
-      <a href="mailto:info@farfetched.ltd" class="btn-secondary">Get In Touch</a>
+      <a href="/about/" class="btn-primary">Learn more</a>
+      <a href="/contact/" class="btn-secondary">Get in touch</a>
     </div>
   </div>
 </section>
 
-<!-- Section 2: Trust Signals & Social Proof -->
-<section class="trust-signals">
-  <div class="trust-content">
-    <h2>Trusted by Tier 1 Gaming Platforms Across North America & Europe</h2>
-    <div class="trust-metrics">
-      <div class="metric">
-        <span class="metric-value">Casino</span>
-        <span class="metric-label">Platform Design</span>
-      </div>
-      <div class="metric">
-        <span class="metric-value">B2B</span>
-        <span class="metric-label">Technical Solution Sales</span>
-      </div>
-      <div class="metric">
-        <span class="metric-value">15+</span>
-        <span class="metric-label">Years in High-Scale Platforms</span>
-      </div>
+<!-- Capabilities + AI -->
+<section class="ff-section">
+  <h2 class="capabilities-heading">Strategy, platforms, and AI for ambitious digital businesses</h2>
+
+  <div class="stat-grid">
+    <div class="stat-card">
+      <div class="stat-card__value">Platform</div>
+      <div class="stat-card__label">Architecture &amp; delivery at scale</div>
     </div>
-    <div class="client-logos">
-      <p class="client-note">Trusted by leading companies in regulated digital platforms</p>
+    <div class="stat-card">
+      <div class="stat-card__value">AI</div>
+      <div class="stat-card__label">Advisory, enablement &amp; deployment</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-card__value">20+</div>
+      <div class="stat-card__label">Years scaling platforms &amp; teams</div>
+    </div>
+  </div>
+
+  <div class="section-label">Where AI creates leverage</div>
+  <div class="leverage-grid">
+    <div class="ff-card ff-card--interactive">
+      <div class="ff-card__index">01</div>
+      <div class="ff-card__title">AI in the workplace</div>
+      <div class="ff-card__body">Modernise IT and operations with AI that lifts day-to-day efficiency across your teams.</div>
+    </div>
+    <div class="ff-card ff-card--interactive">
+      <div class="ff-card__index">02</div>
+      <div class="ff-card__title">AI for engineering</div>
+      <div class="ff-card__body">Bring AI into the development workflow to ship faster without lowering the bar on quality.</div>
+    </div>
+    <div class="ff-card ff-card--interactive">
+      <div class="ff-card__index">03</div>
+      <div class="ff-card__title">AI in your product</div>
+      <div class="ff-card__body">Design and deploy AI as part of proprietary platform solutions your customers rely on.</div>
     </div>
   </div>
 </section>
 
-<!-- Section 3: Niche Positioning & Expertise -->
-<section class="expertise-positioning">
-  <div class="positioning-content">
-    <h2>Specialists in Regulated Digital Platforms</h2>
-    <div class="expertise-grid">
-      <div class="expertise-primary">
-        <h3>Sweet Spot: iGaming</h3>
-        <p>Deep expertise in high-performance gaming platforms, regulatory compliance, and real-time systems that handle millions of concurrent users.</p>
-      </div>
-      <div class="expertise-secondary">
-        <h3>Extended Reach</h3>
-        <p>Open to ambitious digital companies in fintech, e-commerce, and other regulated sectors requiring scalable platform architecture.</p>
-      </div>
+<!-- Expertise / sectors -->
+<section class="ff-section">
+  <h2 class="expertise-heading">Deep in regulated platforms — open to any ambitious sector</h2>
+
+  <div class="expertise-grid">
+    <div class="expertise-primary">
+      <div class="ff-eyebrow">Sweet spot</div>
+      <h3>iGaming</h3>
+      <p>Deep expertise in high-performance gaming platforms, regulatory compliance, and real-time systems that handle millions of concurrent users.</p>
     </div>
-    <div class="expertise-highlight">
-      <p>Combining technical depth with strategic leadership to help regulated platforms scale without compromising performance or compliance.</p>
+    <div class="expertise-secondary">
+      <div class="ff-eyebrow" style="color:var(--text-tertiary);">Extended reach</div>
+      <h3>Regulated &amp; high-growth sectors</h3>
+      <p>From fintech and media to insurance brokerage and health &amp; fitness — wherever ambitious digital businesses need scalable platform architecture.</p>
+    </div>
+  </div>
+
+  <div class="sector-tags">
+    <span class="sector-tag">iGaming</span>
+    <span class="sector-tag">Fintech</span>
+    <span class="sector-tag">Media</span>
+    <span class="sector-tag">Insurance brokerage</span>
+    <span class="sector-tag">Health &amp; fitness</span>
+    <span class="sector-tag">E-commerce</span>
+    <span class="sector-tag sector-tag--accent">…and any sector ready to scale</span>
+  </div>
+
+  <p class="expertise-highlight">Combining technical depth, AI fluency, and strategic leadership to help any platform scale without compromising performance or compliance.</p>
+</section>
+
+<!-- Services -->
+<section class="ff-section ff-section--canvas">
+  <h2 class="expertise-heading">How we drive results</h2>
+  <div class="services-grid">
+    <div class="ff-card ff-card--interactive">
+      <div class="ff-card__index">01</div>
+      <div class="ff-card__title">Strategic advisory</div>
+      <div class="ff-card__body">Technical and AI roadmaps and platform architecture guidance for sustainable growth.</div>
+    </div>
+    <div class="ff-card ff-card--interactive">
+      <div class="ff-card__index">02</div>
+      <div class="ff-card__title">Platform architecture</div>
+      <div class="ff-card__body">Design and optimize high-performance systems for scale and compliance.</div>
+    </div>
+    <div class="ff-card ff-card--interactive">
+      <div class="ff-card__index">03</div>
+      <div class="ff-card__title">Team scaling</div>
+      <div class="ff-card__body">Build and structure engineering teams for rapid, sustainable growth.</div>
+    </div>
+    <div class="ff-card ff-card--interactive">
+      <div class="ff-card__index">04</div>
+      <div class="ff-card__title">Leadership development</div>
+      <div class="ff-card__body">Develop technical and AI leadership capabilities across your organization.</div>
     </div>
   </div>
 </section>
 
-<!-- Section 4: Service Overview -->
-<section class="services-overview">
-  <div class="services-content">
-    <h2>How We Drive Results</h2>
-    <div class="services-grid">
-      <div class="service-card">
-        <div class="service-icon">📊</div>
-        <h3>Strategic Advisory</h3>
-        <p>Technical roadmaps and platform architecture guidance for sustainable growth.</p>
+<!-- Case study -->
+<section class="ff-section">
+  <h2 class="expertise-heading">Recent client case study</h2>
+  <div class="case-study-card">
+    <div class="case-study-header">
+      <div>
+        <h3>Betty.ca — advanced player segmentation &amp; platform optimization</h3>
+        <p class="case-study-type">iGaming platform · March–July 2025</p>
       </div>
-      <div class="service-card">
-        <div class="service-icon">🏗️</div>
-        <h3>Platform Architecture</h3>
-        <p>Design and optimize high-performance systems for scale and compliance.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">👥</div>
-        <h3>Team Scaling</h3>
-        <p>Build and structure engineering teams for rapid, sustainable growth.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">🎯</div>
-        <h3>Leadership Development</h3>
-        <p>Develop technical leadership capabilities across your organization.</p>
-      </div>
+      <img src="/assets/company-logos/clients/betty-ca-logo.svg" alt="Betty.ca">
+    </div>
+
+    <input type="radio" name="case-tab" id="tab-challenge" checked>
+    <input type="radio" name="case-tab" id="tab-solution">
+    <input type="radio" name="case-tab" id="tab-result">
+
+    <div class="case-study-tabs">
+      <label for="tab-challenge">Challenge</label>
+      <label for="tab-solution">Solution</label>
+      <label for="tab-result">Result</label>
+    </div>
+
+    <div class="case-study-panel case-study-panel--challenge">
+      Needed to improve player engagement, retention, and revenue predictability while preparing for rapid growth and greater system flexibility. Required real-time segmentation, live rewards, and seamless integration with external CRM tools.
+    </div>
+    <div class="case-study-panel case-study-panel--solution">
+      <ul>
+        <li>Designed a dynamic segmentation framework using decayed revenue models, churn risk, and behavioral insights for accurate player tiering.</li>
+        <li>Defined real-time session logic to power immediate rewards and boost engagement.</li>
+        <li>Developed simulation/planning tools for cross-team decision-making.</li>
+        <li>Led architecture and integration strategy for new audience/reward services and CRM migration, balancing flexibility with delivery speed.</li>
+      </ul>
+    </div>
+    <div class="case-study-panel case-study-panel--result">
+      <ul>
+        <li>Oversaw the implementation of the first phase segmentation system.</li>
+        <li>Delivered a highly detailed solution including architectural roadmap, tightly aligned with the company's product revenue goals and strategic priorities.</li>
+        <li>Laid the foundation for scalable growth and future innovation.</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- Section 5: Featured Case Study -->
-<section class="featured-case-study">
-  <div class="case-study-content">
-    <h2>Recent Client Case Study</h2>
-    <div class="case-study-card">
-      <div class="case-study-header">
-        <h3>Betty.ca – Advanced Player Segmentation & Platform Optimization</h3>
-        <p class="case-study-type">iGaming Platform, March–July 2025</p>
-      </div>
-      <div class="case-study-details">
-        <div class="case-challenge">
-          <h4>🎯 Challenge</h4>
-          <p>Needed to improve player engagement, retention, and revenue predictability while preparing for rapid growth and greater system flexibility. Required real-time segmentation, live rewards, and seamless integration with external CRM tools.</p>
-        </div>
-        <div class="case-solution">
-          <h4>💡 Solution</h4>
-          <ul>
-            <li>Designed a dynamic segmentation framework using decayed revenue models, churn risk, and behavioral insights for accurate player tiering.</li>
-            <li>Defined real-time session logic to power immediate rewards and boost engagement.</li>
-            <li>Developed simulation/planning tools for cross-team decision-making.</li>
-            <li>Led architecture and integration strategy for new audience/reward services and CRM migration, balancing flexibility with delivery speed.</li>
-          </ul>
-        </div>
-        <div class="case-result">
-          <h4>🗺️ Result 🚀</h4>
-          <p><ul>
-          <li>Oversaw the implmentation of the first phase segmentation system</li>
-          <li>Delivered highly detailed solution including architectural roadmap, tightly aligned with the company's product revenue goals and strategic priorities.</li>
-          <li>Laid the foundation for scalable growth and future innovation.</li>
-          </ul></p>    </div>
-      </div>
-      <!-- <div class="case-study-cta">
-        <a href="/case-studies/" class="btn-secondary">View More Case Studies</a>
-      </div> -->
-    </div>
+<!-- Labs teaser -->
+<section class="ff-section">
+  <div class="labs-teaser">
+    <div class="ff-eyebrow ff-eyebrow--foam">Incubator</div>
+    <h2>Far Fetched Labs: from concept to prototype</h2>
+    <p>Our incubator partners with visionaries who want to explore the edge of what is possible, rapidly transforming far-fetched concepts into tangible prototypes and market-ready narratives.</p>
+    <a href="/far-fetched-labs/" class="btn-secondary">Explore Far Fetched Labs &rarr;</a>
   </div>
 </section>
 
-<!-- Section 6: Personal Branding/About Jesse -->
-<section class="about-jesse">
-  <div class="about-content">
-    <div class="about-text">
-      <h2>Strategic Engineering Leadership</h2>
-      <p class="about-intro">15+ years building and scaling high-performance platforms in regulated industries. Former VP of Engineering turned strategic advisor.</p>
-      <div class="leadership-philosophy">
-        <h3>Leadership Philosophy</h3>
-        <p>Great platforms aren't just about technology—they're about people, processes, and strategic thinking. I help ambitious companies build the foundation for sustainable growth.</p>
+<!-- About teaser -->
+<section class="ff-section">
+  <div class="about-teaser">
+    <div>
+      <h2>Strategic engineering leadership</h2>
+      <p class="about-teaser__intro">20+ years building and scaling high-performance platforms in regulated industries. Former VP of Engineering turned strategic advisor.</p>
+      <div class="about-teaser__philosophy">
+        <div class="ff-eyebrow">Leadership philosophy</div>
+        <p>Great platforms aren't just about technology — they're about people, processes, and strategic thinking. I help ambitious companies build the foundation for sustainable growth.</p>
       </div>
-      <div class="about-cta">
-        <a href="/about/" class="btn-secondary">Learn More About Jesse</a>
-      </div>
+      <a href="/about/" class="btn-secondary">Learn more about Jesse &rarr;</a>
     </div>
-    <div class="about-visual">
-      <img src="/assets/banner-image-jesse.png" alt="Jesse Cary at BITR Conference" style="width:100%;border-radius:12px;">
-    </div>
+    <img src="/assets/banner-image-jesse.png" alt="Jesse Cary at BITR Conference">
   </div>
 </section>
 
-<!-- Section 7: Strong Closing CTA -->
-<section class="closing-cta">
-  <div class="cta-content">
-    <h2>Ready to Scale Your Platform and Team?</h2>
-    <p class="cta-subtitle">Let's discuss how strategic engineering leadership can drive your growth.</p>
-    <div class="cta-options">
-      <a href="/contact/" class="btn-primary">Schedule 30-Minute Intro Call</a>
-      <a href="mailto:info@farfetched.ltd" class="btn-secondary">Send Email</a>
-      <a href="https://www.linkedin.com/in/jessecary" class="btn-tertiary" target="_blank">Connect on LinkedIn</a>
-    </div>
+<!-- Closing CTA -->
+<section class="ff-section ff-section--canvas closing-cta">
+  <h2>Ready to scale your platform and team?</h2>
+  <p class="cta-subtitle">Let's discuss how strategic engineering and AI leadership can drive your growth.</p>
+  <div class="cta-options">
+    <a href="/contact/" class="btn-primary">Schedule 30-minute intro call</a>
+    <a href="mailto:info@farfetched.ltd" class="btn-secondary">Send email</a>
+    <a href="https://www.linkedin.com/in/jessecary" class="btn-tertiary" target="_blank" rel="noopener">Connect on LinkedIn</a>
   </div>
 </section>
+
+</div>
