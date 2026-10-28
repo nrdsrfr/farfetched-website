@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-09T20:00:00Z",
+  "title": "Design System: Far Fetched",
+  "extensions": {
+    "colorMeta": {
+      "ocean": { "role": "primary", "displayName": "Ocean", "canonical": "#2563eb", "tonalRamp": ["#0b234f","#123368","#17458c","#1c56ac","#2563eb","#3b82f6","#60a5fa","#93c5fd"] },
+      "whitewater": { "role": "secondary", "displayName": "Whitewater", "canonical": "#38bdf8", "tonalRamp": ["#0b3a52","#0e5a80","#0c7ab0","#1b9bd6","#38bdf8","#7dd3fc","#a5e9fd","#d4f4fe"] },
+      "abyss": { "role": "neutral", "displayName": "Abyss", "canonical": "#05070c", "tonalRamp": ["#05070c","#0a0f1a","#0d1420","#121b2b","#1b2740","#2a3a58","#445872","#6c8098"] },
+      "foam-white": { "role": "neutral", "displayName": "Foam White", "canonical": "#f4f7fa", "tonalRamp": ["#6c8098","#9aabbe","#c4cfdb","#e4eaf1","#f4f7fa"] }
+    },
+    "typographyMeta": {
+      "display-l": { "displayName": "Display L", "purpose": "Home hero headline only." },
+      "display-m": { "displayName": "Display M", "purpose": "Inner-page titles." },
+      "label": { "displayName": "Eyebrow", "purpose": "Uppercase tracked label above a heading." },
+      "mono": { "displayName": "Mono", "purpose": "Card indices and metadata." }
+    },
+    "shadows": [
+      { "name": "sm", "value": "0 1px 2px rgba(0,5,15,0.4)", "purpose": "Tight separation." },
+      { "name": "md", "value": "0 4px 16px rgba(0,8,24,0.45), 0 1px 0 rgba(255,255,255,0.02) inset", "purpose": "Default card shadow." },
+      { "name": "lg", "value": "0 12px 32px rgba(0,8,24,0.55)", "purpose": "Case study, Labs teaser, images, mobile menu." },
+      { "name": "xl", "value": "0 24px 64px rgba(0,6,20,0.6)", "purpose": "Overlays." },
+      { "name": "glow-accent", "value": "0 0 0 1px rgba(59,130,246,0.4), 0 0 24px rgba(37,99,235,0.35)", "purpose": "Primary button only." },
+      { "name": "glow-foam", "value": "0 0 24px rgba(56,189,248,0.3)", "purpose": "Defined, currently unused." }
+    ],
+    "motion": [
+      { "name": "ease-standard", "value": "cubic-bezier(0.4, 0, 0.2, 1)", "purpose": "Color, border and background transitions." },
+      { "name": "ease-out", "value": "cubic-bezier(0.16, 1, 0.3, 1)", "purpose": "Card lift and page fade-in." },
+      { "name": "duration-fast", "value": "120ms", "purpose": "Buttons and links." },
+      { "name": "duration-base", "value": "200ms", "purpose": "Interactive card lift." },
+      { "name": "duration-slow", "value": "360ms", "purpose": "Defined for larger transitions." }
+    ],
+    "breakpoints": [
+      { "name": "tablet", "value": "900px" },
+      { "name": "mobile", "value": "760px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The single call to action in a section; the only glowing element.",
+      "html": "<button class=\"ds-btn-primary\">Get in touch</button>",
+      "css": ".ds-btn-primary{background:#2563eb;color:#f4f9ff;font:600 1.125rem/1.6 'Space Grotesk',sans-serif;padding:13px 26px;border:1px solid transparent;border-radius:10px;cursor:pointer;box-shadow:0 0 0 1px rgba(59,130,246,0.4),0 0 24px rgba(37,99,235,0.35);transition:transform 120ms,background 120ms}.ds-btn-primary:hover{background:#3b82f6}.ds-btn-primary:active{transform:scale(0.97)}.ds-btn-primary:focus-visible{outline:2px solid #38bdf8;outline-offset:2px}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Outlined companion to the primary action.",
+      "html": "<button class=\"ds-btn-secondary\">Learn more</button>",
+      "css": ".ds-btn-secondary{background:transparent;color:#f4f7fa;font:600 1.125rem/1.6 'Space Grotesk',sans-serif;padding:13px 26px;border:1px solid rgba(148,175,205,0.24);border-radius:10px;cursor:pointer;transition:border-color 120ms,transform 120ms}.ds-btn-secondary:hover{border-color:rgba(59,130,246,0.45)}.ds-btn-secondary:active{transform:scale(0.97)}.ds-btn-secondary:focus-visible{outline:2px solid #38bdf8;outline-offset:2px}"
+    },
+    {
+      "name": "Interactive Card",
+      "kind": "card",
+      "refersTo": "card",
+      "description": "Numbered service or leverage card that lifts on hover.",
+      "html": "<div class=\"ds-card\"><div class=\"ds-card-index\">01</div><div class=\"ds-card-title\">Strategic advisory</div><div class=\"ds-card-body\">Technical and AI roadmaps for sustainable growth.</div></div>",
+      "css": ".ds-card{background:#0d1420;border:1px solid rgba(148,175,205,0.14);border-radius:14px;padding:28px;box-shadow:0 4px 16px rgba(0,8,24,0.45);transition:transform 200ms cubic-bezier(0.16,1,0.3,1),border-color 200ms}.ds-card:hover{transform:translateY(-2px);border-color:rgba(59,130,246,0.45)}.ds-card-index{font:400 0.8125rem/1.5 'JetBrains Mono',monospace;color:#445872;margin-bottom:16px}.ds-card-title{font:600 1.25rem/1.35 'Space Grotesk',sans-serif;color:#f4f7fa;margin-bottom:10px}.ds-card-body{font:400 0.875rem/1.55 'Space Grotesk',sans-serif;color:#9aabbe}"
+    },
+    {
+      "name": "Sector Chip",
+      "kind": "chip",
+      "refersTo": "sector-tag",
+      "description": "Pill tag for sectors; one accent variant per set.",
+      "html": "<span class=\"ds-chip\">iGaming</span> <span class=\"ds-chip ds-chip-accent\">…and any sector ready to scale</span>",
+      "css": ".ds-chip{display:inline-block;font:400 0.875rem/1.55 'Space Grotesk',sans-serif;color:#9aabbe;background:#0d1420;border:1px solid rgba(148,175,205,0.14);border-radius:999px;padding:7px 16px}.ds-chip-accent{color:#7dd3fc;background:rgba(37,99,235,0.14);border-color:rgba(59,130,246,0.45)}"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "Sticky glass bar with wordmark, links and a small primary CTA.",
+      "html": "<nav class=\"ds-nav\"><span class=\"ds-nav-logo\">Far Fetched</span><span class=\"ds-nav-links\"><a class=\"ds-nav-link\">Home</a><a class=\"ds-nav-link ds-nav-active\">About</a><a class=\"ds-nav-link\">Far Fetched Labs</a></span></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;padding:18px 24px;background:rgba(10,15,26,0.85);backdrop-filter:blur(20px);border-bottom:1px solid rgba(148,175,205,0.14)}.ds-nav-logo{font:700 1.25rem/1 'Space Grotesk',sans-serif;letter-spacing:-0.02em;color:#f4f7fa}.ds-nav-links{display:flex;gap:6px}.ds-nav-link{padding:8px 16px;border-radius:6px;font:400 0.875rem/1.55 'Space Grotesk',sans-serif;color:#9aabbe;cursor:pointer;transition:color 120ms}.ds-nav-link:hover{color:#f4f7fa}.ds-nav-active{font-weight:600;color:#f4f7fa;background:rgba(37,99,235,0.14)}"
+    },
+    {
+      "name": "Stat Card",
+      "kind": "custom",
+      "refersTo": "card",
+      "description": "Whitewater figure over a muted label; a three-up band states capabilities.",
+      "html": "<div class=\"ds-stat\"><div class=\"ds-stat-value\">20+</div><div class=\"ds-stat-label\">Years scaling platforms &amp; teams</div></div>",
+      "css": ".ds-stat{background:#0d1420;border:1px solid rgba(148,175,205,0.14);border-radius:14px;padding:28px;box-shadow:0 4px 16px rgba(0,8,24,0.45)}.ds-stat-value{font:700 2.25rem/1 'Space Grotesk',sans-serif;color:#7dd3fc;margin-bottom:8px}.ds-stat-label{font:400 0.875rem/1.55 'Space Grotesk',sans-serif;color:#9aabbe}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Night Swell",
+    "overview": "The site sits at night on deep water. Surfaces are stepped navy over a fixed field of faint wave lines. One ocean-blue accent carries every action; a colder cyan whitewater breaks the surface only for emphasis. Depth is tonal before it is shadowed, and glow is reserved for the primary call to action. Components are composed and technical.",
+    "keyCharacteristics": [
+      "Dark-only, tonal navy surfaces; hairline borders instead of heavy outlines",
+      "One blue accent for action; cyan whitewater for emphasis only",
+      "Space Grotesk throughout with JetBrains Mono for indices and metadata",
+      "Fixed wave-line backdrop masked to fade by about 85% of the viewport",
+      "Full-bleed sections with 90px vertical padding and a 48px side gutter"
+    ],
+    "rules": [
+      { "name": "The Single Beacon Rule", "body": "Ocean is the only colour that means \"act\". Never use it for decoration, and never introduce a second action colour.", "section": "colors" },
+      { "name": "The Whitewater Rule", "body": "Cyan appears at most once or twice per viewport, as emphasis on a word or figure.", "section": "colors" },
+      { "name": "The Tinted Neutral Rule", "body": "Every neutral is a blue-shifted ink. No pure black, no neutral gray, no pure white.", "section": "colors" },
+      { "name": "The Eyebrow Rule", "body": "Uppercase tracked labels sit above a heading and nowhere else.", "section": "typography" },
+      { "name": "The Reading Measure Rule", "body": "Hero subtitle caps at 640px, headings at 820px, inner-page body at 760px.", "section": "typography" },
+      { "name": "The Rare Glow Rule", "body": "Only the primary call to action glows. If two glows share a viewport, one of them is wrong.", "section": "elevation" },
+      { "name": "The Hairline-Before-Shadow Rule", "body": "A surface is separated first by a tonal step and a hairline; the shadow is added only to settle it.", "section": "elevation" }
+    ],
+    "dos": [
+      "Do use tonal steps and a 1px hairline to separate surfaces before reaching for a shadow.",
+      "Do keep Ocean (#2563eb) for actions only.",
+      "Do use Whitewater for one word or figure per viewport.",
+      "Do build with the CSS custom properties from the token files.",
+      "Do keep inner-page content in a narrow 760px column.",
+      "Do honour prefers-reduced-motion for the page fade and card lift."
+    ],
+    "donts": [
+      "Don't add a light theme, or any pure white or pure black surface.",
+      "Don't introduce a second action colour, gradient text, or decorative glows outside the primary button.",
+      "Don't use uppercase tracked text outside eyebrows and section labels.",
+      "Don't put a shadow without a hairline on a card, or a heavy 2px outline on a container.",
+      "Don't hard-code colours inline.",
+      "Don't let the wave backdrop sit under body text at full strength."
+    ]
+  }
+}

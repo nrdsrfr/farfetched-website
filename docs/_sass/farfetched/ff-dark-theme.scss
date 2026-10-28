@@ -9,15 +9,36 @@
 
 html {
   background: var(--surface-app);
+  scroll-behavior: smooth;
 }
 
+// The page colour lives on <html>. <body> stays transparent so the wave
+// layer below (z-index: -1) paints above the root background instead of
+// being hidden behind an opaque body.
 body {
   margin: 0;
-  background: var(--surface-app);
+  background: transparent;
   color: var(--text-primary);
   font: var(--text-body-m);
   -webkit-font-smoothing: antialiased;
 }
+
+// Fixed wave-line pattern behind all content, tinted to the blue palette and
+// fading out by mid-viewport, before the artwork's own lower edge. Sits
+// behind everything (z-index: -1) since nothing else on the page sets a
+// negative z-index.
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: url("/assets/waves.webp") top center / cover no-repeat;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.5;
+  -webkit-mask-image: linear-gradient(to bottom, #000 0%, #000 12%, transparent 50%);
+  mask-image: linear-gradient(to bottom, #000 0%, #000 12%, transparent 50%);
+}
+
 
 a {
   color: var(--text-link);
@@ -179,12 +200,20 @@ em.ff-highlight {
   margin: 0 auto;
 }
 .site-nav__logo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-3);
   font: 700 1.25rem/1 var(--font-sans);
   color: var(--text-primary);
   letter-spacing: var(--tracking-tight);
 }
 .site-nav__logo:hover {
   color: var(--text-primary);
+}
+.site-nav__logo-mark {
+  display: block;
+  width: 36px;
+  height: 36px;
 }
 .site-nav__links {
   display: flex;
@@ -792,5 +821,28 @@ em.ff-highlight {
   .site-footer__inner {
     flex-direction: column;
     align-items: flex-start;
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Reduced motion (kept last so it overrides the transitions above)
+// ---------------------------------------------------------------------------
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .ff-view {
+    animation: none;
+  }
+  .btn-primary,
+  .btn-secondary,
+  .ff-card--interactive {
+    transition: none;
+  }
+  .btn-primary:active,
+  .btn-secondary:active,
+  .ff-card--interactive:hover {
+    transform: none;
   }
 }

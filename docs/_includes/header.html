@@ -1,6 +1,9 @@
 <header class="site-nav" role="banner">
   <div class="site-nav__inner">
-    <a class="site-nav__logo" href="{{ "/" | relative_url }}">Far Fetched</a>
+    <a class="site-nav__logo" href="{{ "/" | relative_url }}">
+      <img class="site-nav__logo-mark" src="{{ "/assets/logo.png" | relative_url }}" alt="" width="36" height="36">
+      <span>Far Fetched</span>
+    </a>
 
     <input type="checkbox" id="nav-trigger" class="site-nav__trigger">
     <label for="nav-trigger" class="site-nav__menu-icon" aria-label="Toggle menu">
@@ -11,7 +14,6 @@
       <a href="{{ "/" | relative_url }}" class="site-nav__link{% if page.url == '/' %} is-active{% endif %}">Home</a>
       <a href="{{ "/about/" | relative_url }}" class="site-nav__link{% if page.url == '/about/' %} is-active{% endif %}">About</a>
       <a href="{{ "/far-fetched-labs/" | relative_url }}" class="site-nav__link{% if page.url == '/far-fetched-labs/' %} is-active{% endif %}">Far Fetched Labs</a>
-      <a href="{{ "/contact/" | relative_url }}" class="site-nav__link{% if page.url == '/contact/' %} is-active{% endif %}">Contact</a>
       <a href="{{ "/contact/" | relative_url }}" class="btn-primary btn-sm site-nav__cta">Get in touch</a>
     </nav>
   </div>
